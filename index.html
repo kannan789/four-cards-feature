@@ -10,13 +10,51 @@
 
 
   <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .top-txt {
+      width: 40%;
+    }
+
+    .sub-txt {
+      width: 40%;
+    }
+
+    .tile {
+      width: 25%;
+      background-color: white;
+      height: 200px;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .tile-head {
+      font-size: 16px;
+      font-weight: bold;;
+    }
+
+    .tile-txt {
+      font-size: 12px;
+    }
+
+    .tile-img {
+      display: flex;
+      justify-content: flex-end;
+    }
     
   </style>
 </head>
 <body>
   <div>
 
-  <div>
+  <div class="top-txt">
     <div> 
   Reliable, efficient delivery
 </div> 
@@ -26,43 +64,43 @@
  </div>
 
 
- <div>
+ <div class="sub-txt">
   Our Artificial Intelligence powered tools use millions of project data points 
   to ensure that your project is successful
 </div>
 
-<div>
+<div class="tile">
 
-  <div>Supervisor</div>
-  <div>Monitors activity to identify project roadblocks</div>
-  <div><img src="./images/icon-supervisor.svg" height="40" width="40"></div>
+  <div class="tile-head">Supervisor</div>
+  <div class="tile-txt">Monitors activity to identify project roadblocks</div>
+  <div class="tile-img"><img src="./images/icon-supervisor.svg" height="40" width="40"></div>
 
   
   
 </div>
 
-<div>
+<div class="tile">
 
-  <div>Team Builder</div>
-  <div>Scans our talent network to create the optimal team for your project</div>
-  <div><img src="./images/icon-team-builder.svg" height="40" width="40"></div>
+  <div class="tile-head">Team Builder</div>
+  <div class="tile-txt">Scans our talent network to create the optimal team for your project</div>
+  <div class="tile-img"><img src="./images/icon-team-builder.svg" height="40" width="40"></div>
   
   
 </div>
 
-<div>
+<div class="tile">
 
-  <div>Karma</div>
-  <div>Regularly evaluates our talent to ensure quality</div>
-  <div><img src="./images/icon-karma.svg" height="40" width="40"></div>
+  <div class="tile-head">Karma</div>
+  <div class="tile-txt">Regularly evaluates our talent to ensure quality</div>
+  <div class="tile-img"><img src="./images/icon-karma.svg" height="40" width="40"></div>
  
   
 </div>
 
-<div>
-  <div>Calculator</div>
-  <div>Uses data from past projects to provide better delivery estimates</div>
-  <div><img src="./images/icon-calculator.svg" height="40" width="40"></div>
+<div class="tile">
+  <div class="tile-head">Calculator</div>
+  <div class="tile-txt">Uses data from past projects to provide better delivery estimates</div>
+  <div class="tile-img"><img src="./images/icon-calculator.svg" height="40" width="40"></div>
   
   
 </div>
