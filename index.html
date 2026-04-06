@@ -31,38 +31,71 @@
     }
 
     .queued-tile {
+      width: 100%;
       display: flex;
-      gap: 10px;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      
     }
 
     .stacked-tile {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 20px;
+      width: 25%;
     }
 
     .tile {
-      width: 25%;
       background-color: white;
       height: 200px;
-      padding: 10px;
+      padding: 20px;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-start;
       gap: 10px;
+      width: 25%;
+      box-shadow: 2px 2px 2px 2px hsl(0, 0%, 90%);
+      box-sizing: border-box;
+      border-radius: 5px;
+    }
+
+    .s-tile {
+      width: 100%;
+    }
+
+    .tile-one {
+      border-top: 5px solid hsl(180, 62%, 55%);
+    }
+
+    .tile-two {
+      border-top: 5px solid hsl(0, 78%, 62%);
+    }
+
+    .tile-three {
+      border-top: 5px solid hsl(34, 97%, 64%);
+    }
+
+    .tile-four {
+      border-top: 5px solid hsl(212, 86%, 64%);
     }
 
     .tile-head {
       font-size: 16px;
-      font-weight: bold;;
+      font-weight: bold;
+
     }
 
     .tile-txt {
       font-size: 12px;
+      width: 80%;
     }
 
     .tile-img {
       display: flex;
       justify-content: flex-end;
+      width: 80%;
     }
     
   </style>
@@ -85,7 +118,7 @@
   to ensure that your project is successful
 </div>
 <div class="queued-tile">
-<div class="tile">
+<div class="tile tile-one">
 
   <div class="tile-head">Supervisor</div>
   <div class="tile-txt">Monitors activity to identify project roadblocks</div>
@@ -95,7 +128,7 @@
   
 </div>
 <div class="stacked-tile">
-<div class="tile">
+<div class="tile s-tile tile-two">
 
   <div class="tile-head">Team Builder</div>
   <div class="tile-txt">Scans our talent network to create the optimal team for your project</div>
@@ -104,7 +137,7 @@
   
 </div>
 
-<div class="tile">
+<div class="tile s-tile tile-three">
 
   <div class="tile-head">Karma</div>
   <div class="tile-txt">Regularly evaluates our talent to ensure quality</div>
@@ -114,7 +147,7 @@
 </div>
 </div>
 
-<div class="tile">
+<div class="tile tile-four">
   <div class="tile-head">Calculator</div>
   <div class="tile-txt">Uses data from past projects to provide better delivery estimates</div>
   <div class="tile-img"><img src="./images/icon-calculator.svg" height="40" width="40"></div>
