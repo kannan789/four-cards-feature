@@ -23,11 +23,31 @@
     }
 
     .top-txt {
-      width: 40%;
+      width: 35%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin: 30px auto;
+      gap: 2px;
+      margin-bottom: 40px;
+    }
+
+    .top-txt-one {
+      font-size: 20px;
+      color:hsl(212, 6%, 44%);
+      opacity: 0.8;
+    }
+
+    .top-txt-two {
+      font-size: 20px;
+      font-weight: 700;
+      opacity: 0.6;
     }
 
     .sub-txt {
-      width: 40%;
+      font-size: 8px; 
+      text-align: center;
     }
 
     .queued-tile {
@@ -48,8 +68,8 @@
 
     .tile {
       background-color: white;
-      height: 200px;
-      padding: 20px;
+      height: 150px;
+      padding: 10px;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
@@ -66,36 +86,38 @@
     }
 
     .tile-one {
-      border-top: 5px solid hsl(180, 62%, 55%);
+      border-top: 3px solid hsl(180, 62%, 55%);
     }
 
     .tile-two {
-      border-top: 5px solid hsl(0, 78%, 62%);
+      border-top: 3px solid hsl(0, 78%, 62%);
     }
 
     .tile-three {
-      border-top: 5px solid hsl(34, 97%, 64%);
+      border-top: 3px solid hsl(34, 97%, 64%);
     }
 
     .tile-four {
-      border-top: 5px solid hsl(212, 86%, 64%);
+      border-top: 3px solid hsl(212, 86%, 64%);
     }
 
     .tile-head {
       font-size: 16px;
       font-weight: bold;
+      opacity: 0.6;
 
     }
 
     .tile-txt {
-      font-size: 12px;
-      width: 80%;
+      font-size: 8px;
+      width: 90%;
+      opacity: 0.8;
     }
 
     .tile-img {
       display: flex;
       justify-content: flex-end;
-      width: 80%;
+      width: 90%;
     }
     
   </style>
@@ -104,25 +126,26 @@
   <div>
 
   <div class="top-txt">
-    <div> 
+    <div class="top-txt-one"> 
   Reliable, efficient delivery
 </div> 
-<div>
+<div class="top-txt-two">
   Powered by Technology
 </div>
- </div>
+ 
 
 
  <div class="sub-txt">
   Our Artificial Intelligence powered tools use millions of project data points 
   to ensure that your project is successful
 </div>
+</div>
 <div class="queued-tile">
 <div class="tile tile-one">
 
   <div class="tile-head">Supervisor</div>
   <div class="tile-txt">Monitors activity to identify project roadblocks</div>
-  <div class="tile-img"><img src="./images/icon-supervisor.svg" height="40" width="40"></div>
+  <div class="tile-img"><img src="./images/icon-supervisor.svg" height="30" width="30"></div>
 
   
   
@@ -132,7 +155,7 @@
 
   <div class="tile-head">Team Builder</div>
   <div class="tile-txt">Scans our talent network to create the optimal team for your project</div>
-  <div class="tile-img"><img src="./images/icon-team-builder.svg" height="40" width="40"></div>
+  <div class="tile-img"><img src="./images/icon-team-builder.svg" height="30" width="30"></div>
   
   
 </div>
@@ -141,7 +164,7 @@
 
   <div class="tile-head">Karma</div>
   <div class="tile-txt">Regularly evaluates our talent to ensure quality</div>
-  <div class="tile-img"><img src="./images/icon-karma.svg" height="40" width="40"></div>
+  <div class="tile-img"><img src="./images/icon-karma.svg" height="30" width="30"></div>
  
   
 </div>
@@ -150,7 +173,7 @@
 <div class="tile tile-four">
   <div class="tile-head">Calculator</div>
   <div class="tile-txt">Uses data from past projects to provide better delivery estimates</div>
-  <div class="tile-img"><img src="./images/icon-calculator.svg" height="40" width="40"></div>
+  <div class="tile-img"><img src="./images/icon-calculator.svg" height="30" width="30"></div>
   
   
 </div>
